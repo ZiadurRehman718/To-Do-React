@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 const App = () => {
   const [text , setText] = useState ("")
   const [todo , setTodo] = useState ([])
-  let [newtodo , setNewtodo] = useState ([])
   
   function addTodo(event) {
     event.preventDefault();
