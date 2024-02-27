@@ -21,11 +21,10 @@ const App = () => {
 
   function edittodo(index) {
     console.log(index);
-    todo.splice(index, 1);
-    newtodo = prompt ("enter new task")
-    setTodo([...todo, newtodo]);
-    setNewtodo([...newtodo])
-  }
+    let newTodo = prompt("Enter new task");
+    todo.splice(index,  1, newTodo);
+    setTodo([...todo]);
+}
   return (
     <>
     <h1>Note Todo's</h1>
