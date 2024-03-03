@@ -49,13 +49,13 @@ function deleteTodo(index) {
         {todo.map((item, index) => {
           return (
             <li
-              className="flex justify-between items-center h-16 rounded-lg pl-3 mt-3 bg-[#0F9690] text-white text-lg border-2 border-[#0F9690] w-[44vw]"
+              className="flex justify-between items-center h-16 rounded-lg pl-3 mt-3 bg-[#0F9690] text-white text-lg border-2 border-[#0F9690] max-w-screen"
               type="none"
               key={index}
             >
               <div className="flex items-center">{item}</div>
               <div className="flex mr-3 space-x-3">
-                <button className="bg-[#45DFB1] transition-colors hover:bg-[#57ff5dca] border-[#45DFB1] rounded-md h-10 w-16" onClick={()=>editTodo(index)}>
+                <button className="bg-[#45DFB1] transition-colors hover:bg-[#57ff5dca] border-[#45DFB1] rounded-md h-10 w-12 ml-10" onClick={()=>editTodo(index)}>
                   Edit
                 </button>
                 <button className="bg-[#80ED99] transition-colors hover:bg-[#ff3232ca] border-[#80ED99] border-2 rounded-md h-10 w-16" onClick={()=>deleteTodo(index)}>
